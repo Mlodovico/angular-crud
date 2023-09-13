@@ -14,6 +14,11 @@
       "id": 3,
       "name": "Iphone 13 Pro",
       "price": 7000.9
+    },
+    {
+      "name": "Celular Iphone",
+      "price": 1000,
+      "id": 4
     }
   ]
 }
