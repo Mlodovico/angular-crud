@@ -28,4 +28,15 @@ export class ProductService {
   read(): Observable<ProductInterface[]> {
     return this.http.get<ProductInterface[]>(this.baseUrl);
   }
+
+  readById(id: string): Observable<ProductInterface> {
+    return this.http.get<ProductInterface>(`${this.baseUrl}/${id}`);
+  }
+
+  update(product: ProductInterface): Observable<ProductInterface> {
+    return this.http.put<ProductInterface>(
+      `${this.baseUrl}/${product.id}`,
+      product
+    );
+  }
 }
