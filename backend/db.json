@@ -19,6 +19,11 @@
       "name": "Celular Iphone",
       "price": 1000,
       "id": 4
+    },
+    {
+      "name": "Iphone 14 pro max",
+      "price": "12.000",
+      "id": 5
     }
   ]
 }
