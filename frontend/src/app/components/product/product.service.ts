@@ -29,7 +29,7 @@ export class ProductService {
     return this.http.get<ProductInterface[]>(this.baseUrl);
   }
 
-  readById(id: string): Observable<ProductInterface> {
+  readById(id: string | null): Observable<ProductInterface> {
     return this.http.get<ProductInterface>(`${this.baseUrl}/${id}`);
   }
 
@@ -38,5 +38,9 @@ export class ProductService {
       `${this.baseUrl}/${product.id}`,
       product
     );
+  }
+
+  delete(id: number | undefined): Observable<ProductInterface> {
+    return this.http.delete<ProductInterface>(`${this.baseUrl}/${id}`);
   }
 }
