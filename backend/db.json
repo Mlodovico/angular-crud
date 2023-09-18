@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Caneta BIC preta",
-      "price": 5.89
+      "price": "8.00"
     },
     {
       "id": 2,
@@ -11,19 +11,9 @@
       "price": 12000.9
     },
     {
-      "id": 3,
-      "name": "Iphone 13 Pro",
-      "price": 7000.9
-    },
-    {
       "name": "Celular Iphone",
       "price": 1000,
       "id": 4
-    },
-    {
-      "name": "Iphone 14 pro max",
-      "price": "12.000",
-      "id": 5
     }
   ]
 }
